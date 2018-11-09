@@ -10,6 +10,7 @@ import React, {Component} from 'react'
 import {View, Text} from 'react-native'
 
 import firebase from 'react-native-firebase'
+import Button from 'react-native-button'
 
 import Login from './components/Login'
 
@@ -31,6 +32,14 @@ export default class App extends Component {
       this.unsubscriber();
     }
   }
+  onSignout = () => {
+    firebase.auth().signOut()
+      .then(() => {
+        console.log(`Signed out`);
+      }).catch((error) => {
+        console.log(`Signing out fail with error: ${error}`);
+      })
+  }
   render() {
     if (!this.state.user) {
       return (
@@ -42,6 +51,11 @@ export default class App extends Component {
     return (
       <View>
         <Text>Welcome to my awesome app!</Text>
+        <Button 
+          containerStyle={{ padding: 10, margin: 10, borderRadius: 4, backgroundColor: 'red' }}
+          style={{ fontSize: 17, color: 'white' }}
+          onPress={this.onSignout}
+          >Sign Out</Button>
       </View>
     );
   }
