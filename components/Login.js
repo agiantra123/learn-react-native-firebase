@@ -91,6 +91,7 @@ export default class Login extends Component {
                         >Login Anonymously</Button>
                 {/* END FOR SIGNING IN ANONYMOUSLY */}
 
+                {/* DISPLAYING ERROR */}
                 <Text>{ this.state.errorCode + ': ' + this.state.errorText }</Text>
             </View>
         )

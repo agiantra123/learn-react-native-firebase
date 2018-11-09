@@ -17,17 +17,17 @@ import Login from './components/Login'
 export default class App extends Component {
   constructor() {
     super();
-    this.unsubscriber = null;
+    this.unsubscriber = null; // NULL FOR THE FIRST TIME
     this.state = {
       user: null,
     };
   }
-  componentDidMount() {
+  componentDidMount() { // CREATE LISTENER
     this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
       this.setState({ user });
     });
   }
-  componentWillUnmount() {
+  componentWillUnmount() { // REMOVE LISTENER
     if (this.unsubscriber) {
       this.unsubscriber();
     }
@@ -41,6 +41,8 @@ export default class App extends Component {
       })
   }
   render() {
+
+    // IF THERE IS NO LOGGED IN USER
     if (!this.state.user) {
       return (
         <View>
@@ -48,6 +50,8 @@ export default class App extends Component {
         </View>
       );
     }
+
+    // IF USER LOGGED IN
     return (
       <View>
         <Text>Welcome to my awesome app!</Text>
