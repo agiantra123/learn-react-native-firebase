@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "777905592854",
+    "firebase_url": "https://nguyenduchoangfirebaseb.firebaseio.com",
+    "project_id": "nguyenduchoangfirebaseb",
+    "storage_bucket": "nguyenduchoangfirebaseb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777905592854:android:54e7b494432e0d55",
+        "android_client_info": {
+          "package_name": "com.nguyenduchoang_firebaseb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777905592854-d5m0gkguvlpbm6b2et4emdotnaf871ak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nguyenduchoang_firebaseb",
+            "certificate_hash": "4cc1bf0694bbc2c62694bda36cbb09f7e82899fe"
+          }
+        },
+        {
+          "client_id": "777905592854-5v1oj348bpfhtj7h77m5as2n268sobkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Zrtxbc9qcXzrEBASmS6lDi5isZi7jRA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777905592854-5v1oj348bpfhtj7h77m5as2n268sobkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
