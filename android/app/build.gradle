@@ -100,6 +100,7 @@ android {
     defaultConfig {
         applicationId "com.nguyenduchoang_firebaseb"
         minSdkVersion rootProject.ext.minSdkVersion
+        multiDexEnabled true  // needed for firestore:
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -145,6 +146,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.0.1"
     implementation "com.google.firebase:firebase-core:16.0.4"
     implementation "com.google.firebase:firebase-auth:16.0.5"
+    implementation "com.google.firebase:firebase-firestore:17.1.2"
 }
 
 // Run this once to be able to run the application with BUCK

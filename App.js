@@ -13,10 +13,12 @@ import firebase from 'react-native-firebase'
 import Button from 'react-native-button'
 
 import Login from './components/Login'
+import Todo from './components/Todo'
 
 export default class App extends Component {
   constructor() {
     super();
+    
     this.unsubscriber = null; // NULL FOR THE FIRST TIME
     this.state = {
       user: null,
@@ -60,6 +62,7 @@ export default class App extends Component {
           style={{ fontSize: 17, color: 'white' }}
           onPress={this.onSignout}
           >Sign Out</Button>
+        <Todo />
       </View>
     );
   }
