@@ -13,7 +13,7 @@ import firebase from 'react-native-firebase'
 import Button from 'react-native-button'
 
 import Login from './components/Login'
-import Todo from './components/Todo'
+import Todo from './components/auth_firestore/Todo'
 
 export default class App extends Component {
   constructor() {
